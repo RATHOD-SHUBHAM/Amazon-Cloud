@@ -1,0 +1,119 @@
+Terminal:
+=====================================================================
+=====================================================================
+
+Configure AWS Amplify CLI
+% sudo npm install -g @aws-amplify/cli
+password:
+
+=====================================================================
+
+=====================================================================
+
+
+% amplify
+
+% amplify Configure
+Enter
+Region - Enter
+user name - give name
+[ Make a copy of access key and secret key ]
+
+Access Key : 
+Secret Key: 
+
+Profile Name: amplify (just a name)
+
+
+=====================================================================
+=====================================================================
+
+
+% npx create-react-app application name(eg: Kineteco)
+
+% cd Kineteco
+
+# interact react with amplify
+% amplify init
+
+Enter 
+Enter (dev env)
+VS code
+js
+react
+Y
+(choose Profile we create eg amplify)
+
+
+=====================================================================
+=====================================================================
+
+% cd kineteco
+% npm run start
+
+ctrl+c
+
+=====================================================================
+=====================================================================
+
+# go to index.js
+
+import Amplify from 'aws-amplify';
+import awsconfig from '/aws-exports';
+
+Amplify.configure(awsconfig);
+
+
+% cd kineteco
+% sudo npm install aws-amplify @aws-amplify/ui-react
+password:
+
+% npm run start
+
+=====================================================================
+=====================================================================
+
+AWS COgnito:
+
+
+kineteco % ammplify add auth
+
+Email
+
+No, 
+
+kineteco % amplify push
+yes
+
+kineteco % amplify status
+
+
+=====================================================================
+=====================================================================
+# App.js:
+
+import {withAuthenticator,AmplifySignOut} from "@aws-amplify/ui-react";
+
+export default withAuthenticator(App);
+
+
+
+kineteco % npm run start
+=====================================================================
+=====================================================================
+
+kineteco % amplify add api
+
+GraphQl
+Amazon Cognito User Pool
+No
+No
+
+No
+
+kineteco % amplify status
+kineteco % amplify push
+Y
+
+
+
