@@ -19,4 +19,6 @@
 8. AWS SNS.
 9. AWS Comprehend.
 10. AWS SageMaker.
+11. AWS Textract.
+12. AWS Augmented AI or A2I.
 
